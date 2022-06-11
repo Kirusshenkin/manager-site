@@ -5,7 +5,6 @@ const URL = 'http://localhost:8000'
 const socket = io(URL)
 
 var mySocketId
-// register preliminary event listeners here:
 
 
 socket.on("createNewGame", statusUpdate => {
