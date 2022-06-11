@@ -4,10 +4,9 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .",
-    "prestart": "npm run build",
-    "server:watch": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "test": "test",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Kirusshenkin",
   "license": "ISC",
@@ -15,5 +14,8 @@
     "@types/express": "^4.17.13",
     "dotenv": "^16.0.0",
     "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "socket.io": "^2.3.0"
   }
 }
